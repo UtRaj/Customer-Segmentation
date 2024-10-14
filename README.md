@@ -1,36 +1,65 @@
-# Customer segmentation
+# Customer Segmentation with RFM and K-Means Clustering
 
-### The customer segmentation based on RFM method and K-Means clustering
+This project demonstrates customer segmentation using the RFM (Recency, Frequency, Monetary Value) method and K-Means clustering. It analyzes a sample sales dataset to identify customer segments for targeted marketing strategies.
 
-## General info
-The project contains two methods of customer segmentation by combining the RFM method and K-Means clustering. The dataset includes sample sales data based on retail analytics. The analysis was performed in two approaches:
-- **the first** one uses RFM scoring (assigned RFM score) and K-means clustering;
-- **the second** raw calculated RFM variables and K-means clustering.
+## Dataset
 
-### Dataset
-The dataset includes sample sales data based on retail analytics and contains three years of sales. It comes from Kaggle and can be find [here](https://www.kaggle.com/kyanyoga/sample-sales-data).
+The dataset used in this project is a sales dataset from Kaggle.
 
-## Motivation
-The customer segmentation is an effective method that enables to get better know clients and to better correspond their various needs. 
-Almost every company that sells products or services stores data of shopping. This type of data can be used to execute customer segmentation thus the results of the analysis can be translated into marketing campaigns to increase sales. One of the most widely used techniques is RFM analysis, which allows to create personalized special offers to improve sales. 
+## Project Steps
 
-**RFM** stands for Recency, Frequency, Monetary Value and it is the technique of customer segmentation based on their transaction history. The RFM analysis is based on three criterias which measure different customer characteristics:
-- Recency: Days since last purchase/order of the client;
-- Frequency: Total number of purchases the customer were made;
-- Monetary Value: Total money the customer spent per order.
+1. **Import Libraries and Load Data:** Import necessary libraries and load the sales dataset.
+2. **Data Cleaning and Preparation:** Remove irrelevant columns and prepare the data for analysis.
+3. **Data Analysis and Visualization:** Explore the data using descriptive statistics and visualizations.
+4. **RFM Analysis:** Calculate Recency, Frequency, and Monetary Value for each customer.
+5. **Model: RFM Scoring + K-Means Clustering:** 
+    - Assign RFM scores based on percentiles.
+    - Use K-Means clustering to group customers based on their RFM scores.
+    - Find the optimal number of clusters using the Elbow method.
+6. **Description of the Results:**
+    - Interpret the resulting customer segments.
+    - Formulate potential marketing strategies based on the segments.
 
-## Project contains:
-- First approach - **Customer_segmentation.ipynb**
-- Second approach - **Segmentation_Kmeans.ipynb**
-- Python script with customer segmentation - **customers_segments.py**
+## Code Structure
 
-## Technologies
+The code is organized into several sections, each covering a specific step of the project.
 
-The project is created with:
+## Requirements
 
-- Python 3.6
-- libraries: pandas, numpy, sklearn, scipy, seaborn, matplotlib.
+- Python 3.x
+- pandas
+- numpy
+- matplotlib
+- seaborn
+- datetime
+- scipy
+- statsmodels
+- sklearn
 
-**Running the project:**
+## How to Run
 
-To run this project use Jupyter Notebook or Google Colab.
+1. Clone the repository.
+2. Install the required libraries using `pip install -r requirements.txt`.
+3. Replace the dataset path with the location of your sales dataset.
+4. Run the Python script to perform the analysis.
+
+## Results
+
+The project identifies several customer segments:
+
+- **Active:** Customers who have purchased recently, frequently, and for high monetary value.
+- **Inactive:** Customers who have not purchased recently, infrequently, and for low monetary value.
+- **Departing:** Former high-value customers who have stopped purchasing.
+- **New:** Recently acquired customers.
+
+## Potential Marketing Strategies
+
+- **Active:** Reward loyalty with exclusive offers and promotions.
+- **Inactive:** Reactivate them with targeted campaigns and personalized offers.
+- **Departing:** Attempt to re-engage them by understanding the reasons for churn.
+- **New:** Welcome them with incentives and tailor marketing messages to their needs.
+
+
+## Contributions
+
+Contributions to this project are welcome! Feel free to open issues or submit pull requests.
