@@ -4,7 +4,7 @@ This project demonstrates customer segmentation using the RFM (Recency, Frequenc
 
 ## Dataset
 
-The dataset used in this project is a sample sales dataset from Kaggle: [https://www.kaggle.com/kyanyoga/sample-sales-data](https://www.kaggle.com/kyanyoga/sample-sales-data)
+The dataset used in this project is a sales dataset from Kaggle.
 
 ## Project Steps
 
